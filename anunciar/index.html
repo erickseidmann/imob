@@ -1,0 +1,155 @@
+<!--Aplicação Web - Projeto Integrador - Empresa fictícia Imob - Serviços Imobiliários-->
+<!--Autora Mariana Focassio-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anuncie seu imóvel conosco</title>
+
+    <link rel="stylesheet" href="./assets/styles/index.css"/> <!--Estilização da página-->
+
+</head>
+<body>
+    
+    <section class="m-navbar">
+
+        <a href="#"><img class="c-navbar__logo" src="./assets/images/logomarca.svg" alt="Logo"></a>
+        <!--Logo Imob-->
+
+        <button type="button" class="c-navbar__hamburguer"> <!--Menu hamburguer para modo mobile-->
+            <img src="./assets/images/hamburguer-menu.svg" alt="Menu Hamburguer">
+        </button>
+
+        <nav class="o-navbar__links">
+            <a href="#">
+                COMPRAR
+            </a>
+            <a href="#">
+                ALUGAR
+            </a>
+            <a href="#">
+                ANUNCIAR
+            </a>
+            <a href="#">
+                LANÇAMENTOS
+            </a>
+            <a href="#">
+                SERVIÇOS
+            </a>
+            <a href="#">
+                FINANCIAMENTO
+            </a>
+        </nav>
+
+        <a href="#">
+            <button type="button" class="c-navbar__login-buttom o-navbar__login-buttom">
+                ENTRAR
+                <!-- <img class="c-navbar__user-icon" src="./assets/images/user-icon.svg"/> Ícone do botão -->
+            </button>
+        </a> <!--Botão para login do usuário, corretor ou prestador de serviços-->
+
+    </section>
+
+    <section class="m-container">
+
+        <div class="o-container__banner">
+
+            <div class="c-container__text">
+                <h1>Cadastre seu imóvel com total segurança</h1>
+                <p>Preencha o formulário e cadastre o seu imóvel para venda ou locação. Em breve um de nossos consultores entrará em contato para confirmar o cadastro e apresentar as estratégias da nossa empresa para divulgação e comercialização do seu imóvel.</p>
+            </div>
+
+        </div>
+
+        <div class="o-container__image">
+
+            <div class="c-container__image">
+                <img src="./assets/images/predio.svg" alt="">
+            </div>
+
+        </div>
+
+        <div class="o-container__form">
+            <form action="#" method="POST">
+
+                <div id="name-input">
+                    <input type="text" name="nome" id="nome" placeholder="Nome" required>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
+                </div>
+                    
+                <div id="email-input">
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <input type="email" name="confirmar-email" placeholder="Confirme seu e-mail" required>
+                </div>
+                    
+                <div id="phone-input">
+                    <input type="number" name="celular" placeholder="DDD+Celular/Whatsapp" required>
+                </div>
+                    
+                <div id="endereço-input">
+                    <input type="number" name="cep" placeholder="CEP" required>
+                    <input type="text" name="cidade" placeholder="Cidade" required>
+                    <input type="text" name="endereço" placeholder="Endereço + Número" required>
+                    <input type="text" name="complemento" placeholder="Complemento" required>
+                    <input type="text" name="bairro" placeholder="Bairro" required>
+                </div>
+                    
+                <div id="property-input">
+                    <input type="text" name="tipo-imovel" placeholder="Tipo de imóvel" required>
+                    <input type="text" name="condição-imovel" placeholder="Condição do imóvel" required>
+                </div>
+                    
+                <div id="submit-input">
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </form>
+        </div>
+
+        <div class="o-container__footer">
+
+            <div class="c-footer__map">
+                <img id="footer-image" src="./assets/images/map.svg" alt="">
+            </div>
+            <div class="c-footer__links">
+                <a href="#"><img class="footer__logo" src="./assets/images/logomarca.svg" alt="Logo"></a>
+                <nav class="nav__footer">
+                    <a href="#">
+                        Comprar
+                    </a>
+                    <a href="#">
+                        Alugar
+                    </a>
+                    <a href="#">
+                        Anunciar
+                    </a>
+                    <a href="#">
+                        Lançamentos
+                    </a>
+                    <a href="#">
+                        Serviços
+                    </a>
+                    <a href="#">
+                        Financiamento
+                    </a>
+                </nav>
+            </div>
+            <div class="c-footer__redes">
+                <h2>Nossas redes sociais:</h2>
+                <nav>
+                    <a href="#"><img src="./assets/images/Facebook.svg"></a>
+                    <a href="#"><img src="./assets/images/Instagram.svg"></a>
+                    <a href="#"><img src="./assets/images/WhatsApp.svg"></a>
+                </nav>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

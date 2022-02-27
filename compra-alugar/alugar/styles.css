@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #f2f2f2;
+}
+
+.logo{
+    position: absolute;
+    height: 20px;
+    left: 5px;
+    top: -20px;
+
+}
+header{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 1rem rgb(111, 111, 111);
+    
+
+}
+
+ul{
+    display: flex;
+    margin: 150px;
+    width: 1500px;
+    font-family: "Ropa Sans", sans-serif;
+    font-size: 17px;
+    margin-top: 25px;
+
+}
+li{
+    color: #979797;
+    list-style: none;
+    cursor: pointer;
+    padding-left: 5rem;
+}
+
+´.botaologin{
+    position:absolute;
+    top:20px;
+    left:50px;
+    margin:0px;
+    padding:0px;
+    background-color: aqua;
+            }
+
+.botaologin a { 
+    color:white;
+    font-family: "Ropa Sans", sans-serif;
+    font: bold 16px/40px arial, helvetica, sans-aerif;
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    left: 1100px;
+    top: 10px;
+    
+    background: #4BC0C8;
+    box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;	
+    text-decoration: none;
+    text-align:center;
+    
+	}
+
+    
+    input[type="radio"] + label {
+        color:#979797;
+        font-family:"Ropa Sans", sans-serif;
+        text-align: center;
+    }
+
+
+
+.filtro {
+    margin-top: 50px;
+    margin-left: -210px;
+}
+
+.filtro ol{
+    color: #707070;
+    font-size:small;
+
+}
+
+input[type="number"]{
+    
+        
+        
+        left: 20px;
+        top: 130px;
+        background: #e5e5e5cb;
+       
+        border-radius: 40px;
+}
+
+
+
+.caixadepesquisa{
+    position: absolute;
+    width: 612px;
+    height: 48px;
+    left: 440px;
+    top: 100px;
+    background: #E5E5E5;
+    box-shadow: 0px 8px 5px rgb(0 0 0 / 25%);
+    border-radius: 30px;
+}
+
+.caixadepesquisa a{
+    text-decoration: none;
+    text-align:center;
+    font-family: "roboto" sans-serif; 
+    font-size: 13px;
+    color: #707070;
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    left: 200px;
+    top: 17px;
+  
+    
+}

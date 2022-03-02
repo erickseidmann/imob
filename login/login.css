@@ -1,212 +1,9 @@
 *,
 *:before,
 *:after {
-    margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: Myanmar Khyay, Arial, sans-serif;
 }
-
-a {
-    text-decoration: none;
-}
-
-a.links {
-    display: none;
-}
-
-#login>img {
-    width: 25%;
-    display: flex;
-    padding: 10px 38% 10px 38%;
-}
-
-
-/**Acima reseta o CSS e retira o underline dos links e esconde âncoras (a.links)*/
-
-.content {
-    width: 511px;
-    height: 776px;
-    margin: 0px auto;
-    padding-top: 40%;
-    position: relative;
-}
-
-
-/**Acima foi criado a classe (.content), que envolve os formulários*/
-
-h1 {
-    font-size: 48px;
-    color: #526c6e;
-    padding: 2px 0 10px 0;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    padding-bottom: 30px;
-}
-
-
-/**Acima estiliza o cabeçalho, formatando o h1*/
-
-p {
-    margin-bottom: 15px;
-}
-
-.content p:first-child {
-    margin: 0px;
-}
-
-label {
-    color: #405c60;
-    position: relative;
-}
-
-
-/**Aquela estilizada marota...*/
-
-::-webkit-input-placeholder {
-    color: #bebcbc;
-    font-style: italic;
-}
-
-input:-moz-placeholder,
-textarea:-moz-placeholder {
-    color: #bebcbc;
-    font-style: italic;
-}
-
-
-/**Acima definimos os estilos do placeholder*/
-
-input {
-    outline: none;
-}
-
-
-/*estilo dos input,  menos o checkbox */
-
-input:not([type="checkbox"]) {
-    width: 95%;
-    margin-top: 4px;
-    padding: 10px;
-    border: 1px solid #b2b2b2;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
-    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
-    -webkit-transition: all 0.2s linear;
-    transition: all 0.2s linear;
-}
-
-
-/*estilo do botão submit */
-
-input[type="submit"] {
-    width: 100%!important;
-    cursor: pointer;
-    background: rgb(61, 157, 179);
-    padding: 8px 5px;
-    color: #fff;
-    font-size: 20px;
-    border: 1px solid #fff;
-    margin-bottom: 10px;
-    text-shadow: 0 1px 1px #333;
-    -webkit-border-radius: 5px;
-    border-radius: 20px;
-    transition: all 0.2s linear;
-}
-
-
-/*estilo do botão submit no hover */
-
-input[type="submit"]:hover {
-    background: #4ab3c6;
-}
-
-
-/**Acima, alguns estilos para os campos ( input ) dos formulários, incluindo o ( submit ).*/
-
-.link {
-    position: absolute;
-    background: #e1eaeb;
-    color: #7f7c7c;
-    left: 0px;
-    height: 20px;
-    width: 440px;
-    padding: 17px 30px 20px 30px;
-    font-size: 16px;
-    text-align: right;
-    border-top: 1px solid #dbe5e8;
-    -webkit-border-radius: 0 0 5px 5px;
-    border-radius: 0 0 5px 5px;
-}
-
-.link a {
-    font-weight: bold;
-    background: #f7f8f1;
-    padding: 6px;
-    color: rgb(29, 162, 193);
-    margin-left: 10px;
-    border: 1px solid #cbd518;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-transition: all 0.4s linear;
-    transition: all 0.4s linear;
-}
-
-.link a:hover {
-    color: #39bfd7;
-    background: #f7f7f7;
-    border: 1px solid #4ab3c6;
-}
-
-
-/**Acima, estiliza os links que alternarão de um formulário para outro ao clicar.*/
-
-#cadastro,
-#login {
-    position: absolute;
-    top: 0px;
-    width: 88%;
-    padding: 18px 6% 60px 6%;
-    margin: 0 0 35px 0;
-    background: #f7f7f7;
-    border: 1px solid rgba(147, 184, 189, 0.8);
-    box-shadow: 5px;
-    border-radius: 5px;
-    -webkit-animation-duration: 0.5s;
-    -webkit-animation-timing-function: ease;
-    -webkit-animation-fill-mode: both;
-    animation-duration: 0.5s;
-    animation-timing-function: ease;
-    animation-fill-mode: both;
-}
-
-
-/**Acima, definimos os estilos para login / cadastro de usuários e definimos a animação entre ambos.*/
-
-
-/* Efeito ao clicar no botão ( Ir para Login ) */
-
-#paracadastro:target~.content #cadastro,
-#paralogin:target~.content #login {
-    z-index: 2;
-    -webkit-animation-name: fadeInLeft;
-    animation-name: fadeInLeft;
-    -webkit-animation-delay: .1s;
-    animation-delay: .1s;
-}
-
-
-/* Efeito ao clicar no botão ( Cadastre-se ) */
-
-#registro:target~.content #login,
-#paralogin:target~.content #cadastro {
-    -webkit-animation-name: fadeOutLeft;
-    animation-name: fadeOutLeft;
-}
-
-
-/*fadeInLeft*/
 
 @-webkit-keyframes fadeInLeft {
     0% {
@@ -230,9 +27,6 @@ input[type="submit"]:hover {
     }
 }
 
-
-/*fadeOutLeft*/
-
 @-webkit-keyframes fadeOutLeft {
     0% {
         opacity: 1;
@@ -255,5 +49,181 @@ input[type="submit"]:hover {
     }
 }
 
+a {
+    text-decoration: none;
+}
 
-/**Acima criamos dois ( keyframes ), que dão os efeitos nas trocas dos formulários.*/
+a.links {
+    display: none;
+    color: #7f7c7c;
+}
+
+.container>a>img {
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content {
+    display: flex;
+    width: 380px;
+    height: 580px;
+    padding-top: 100px;
+    position: relative;
+    background: #e5e5e5;
+}
+
+.content>div {
+    display: flex;
+    width: 511px;
+    height: 780px;
+    margin: 20%;
+    padding-top: 5px;
+    background: #e5e5e5;
+}
+
+.content>div>form>img {
+    width: 120px;
+    display: flex;
+    padding-left: 10vw;
+}
+
+h1 {
+    font-size: 48px;
+    color: #454545;
+    padding: 5px 0 5px 0;
+    font-family: Myanmar Khyay, Arial, sans-serif, ;
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.content p:first-child {
+    margin: 0px;
+}
+
+label {
+    color: #405c60;
+    position: relative;
+}
+
+::-webkit-input-placeholder {
+    color: #bebcbc;
+    font-style: italic;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #bebcbc;
+    font-style: italic;
+}
+
+input {
+    outline: none;
+}
+
+input:not([type="checkbox"]) {
+    width: 95%;
+    margin-top: 4px;
+    padding: 10px;
+    border: none;
+    -webkit-border-radius: 3px;
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+input[type="submit"] {
+    width: 100%!important;
+    cursor: pointer;
+    background: rgb(61, 157, 179);
+    padding: 8px 5px;
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid #fff;
+    margin-bottom: 10px;
+    text-shadow: 0 1px 1px #333;
+    -webkit-border-radius: 5px;
+    border-radius: 20px;
+    transition: all 0.2s linear;
+}
+
+input[type="submit"]:hover {
+    background: #4ab3c6;
+}
+
+.link {
+    display: flex;
+    position: relative;
+    background: #e1eaeb;
+    color: #7f7c7c;
+    left: 0px;
+    height: 20px;
+    width: 280px;
+    padding: 17px 30px 20px 30px;
+    font-size: 16px;
+    text-align: right;
+    border-top: 1px solid #dbe5e8;
+    -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+.link a {
+    display: flex;
+    font-weight: bold;
+    background: #f7f8f1;
+    padding: 6px;
+    color: rgb(29, 162, 193);
+    margin-left: 10px;
+    border: 1px solid #12ec99;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.link a:hover {
+    color: #39bfd7;
+    background: #f7f7f7;
+    border: 1px solid #4ab3c6;
+}
+
+#cadastro,
+.content>div {
+    position: absolute;
+    top: 0px;
+    width: 88%;
+    padding: 18px 6% 60px 6%;
+    margin: 0 0 35px 0;
+    background: #f7f7f7;
+    border: none;
+    box-shadow: 10px;
+    border-radius: 5px;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+
+#paracadastro:target~.content #cadastro,
+#paralogin:target~.content #login {
+    z-index: 2;
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-delay: .1s;
+    animation-delay: .1s;
+}
+
+#registro:target~.content #login,
+#paralogin:target~.content #cadastro {
+    -webkit-animation-name: fadeOutLeft;
+    animation-name: fadeOutLeft;
+}
